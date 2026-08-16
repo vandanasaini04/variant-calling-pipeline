@@ -1,39 +1,40 @@
-S. aureus Variant Calling Pipeline
+# S. aureus USA300 Variant Calling Pipeline
 
-Overview
+## Overview
 
-An end-to-end NGS variant-calling workflow for Staphylococcus aureus whole-genome sequencing (WGS) data.
+An end-to-end NGS variant-calling workflow for *Staphylococcus aureus* USA300 whole-genome sequencing (WGS) data.
 
-Tools Used
+## Tools Used
 
 - FastQC — sequencing quality assessment
 - Trimmomatic — read trimming and quality filtering
-- BWA-MEM — alignment of reads to the reference genome
+- BWA-MEM — alignment to the reference genome
 - SAMtools — SAM/BAM processing, sorting and indexing
-- FreeBayes — variant calling
+- FreeBayes — haploid variant calling
 
-Dataset
+## Dataset
 
-- Input: S. aureus paired-end WGS reads — SRA accession "SRR8359173"
-- Reference: S. aureus USA300 genome — "GCF_000013425.1"
+- Input: *S. aureus* USA300_FPR3757 paired-end WGS reads — SRA accession `ERR17521341`
+- Reference: *S. aureus* USA300_FPR3757 — `GCF_000013465.1`
 
-Workflow
+## Workflow
 
-FASTQ → Trimmomatic → BWA-MEM → SAMtools → FreeBayes → VCF
+FASTQ → FastQC → Trimmomatic → BWA-MEM → SAMtools → FreeBayes → VCF → Variant Filtering
 
-Results
+## Results
 
-- 58,548 raw variant calls generated using FreeBayes.
+- 99.88% reads mapped to the reference genome
+- 99.19% properly paired
+- 465 raw FreeBayes variant calls
+- 63 filtered variant calls
 
-«The reported calls represent preliminary variant calls from the implemented workflow and should undergo additional quality filtering and biological validation before being interpreted as confirmed mutations.»
+## How to Run
 
-How to Run
-
-1. Download the ".ipynb" notebook from this repository.
+1. Download the `.ipynb` notebook from this repository.
 2. Open the notebook in Google Colab.
 3. Install or verify the required bioinformatics tools and dependencies.
 4. Run the notebook cells sequentially.
 
-Author
+## Author
 
 Vandana Saini
