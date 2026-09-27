@@ -181,5 +181,4 @@ This pipeline runs in Google Colab. No local installation required.
 ## Author
 
 Vandana Saini
-M.Sc. Microbiology | Dissertation Research, IIT Roorkee
 [github.com/vandanasaini04](https://github.com/vandanasaini04)
