@@ -162,10 +162,11 @@ This pipeline runs in Google Colab. No local installation required.
 
 | File | Description |
 |------|-------------|
-| `USA300_ERR17521341.raw.vcf` | 465 raw FreeBayes variant calls |
-| `USA300_ERR17521341.filtered.vcf` | 57 high-confidence filtered variants |
-| `USA300_ERR17521341.high_confidence_variants.csv` | Filtered variants as CSV |
-| `USA300_ERR17521341.annotated.tsv` | Variants with gene annotation |
+| `results/USA300_ERR17521341.annotated.tsv` | 57 high-confidence variants with gene annotation |
+
+The notebook also generates the raw VCF (465 variants) and the
+filtered VCF (57 variants) when run. These are not stored in this
+repository; their results are shown in the notebook outputs.
 
 ---
 
