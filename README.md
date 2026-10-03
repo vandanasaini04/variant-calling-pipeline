@@ -69,7 +69,7 @@ ERR17521341 paired-end reads
           ▼
     FreeBayes
   variant calling
-  (--ploidy 1)
+  (default settings)
           │
           ▼
   465 raw variants
@@ -176,7 +176,7 @@ repository; their results are shown in the notebook outputs.
 - Variant annotation identifies genomic location (genic/intergenic) but does not predict functional consequence
 - Results represent computational predictions and require experimental validation
 - `agrC` and other virulence-associated gene variants require phenotypic confirmation before biological interpretation
-
+- FreeBayes was run with default settings (diploid assumption); rerunning with --ploidy 1 is a planned improvement
 ---
 
 ## Author
