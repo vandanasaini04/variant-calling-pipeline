@@ -48,7 +48,7 @@ ERR17521341 paired-end reads
           ▼
     Trimmomatic
   adapter trimming
-  SLIDINGWINDOW:4:20
+  SLIDINGWINDOW:4:15
   MINLEN:36
           │
           ▼
