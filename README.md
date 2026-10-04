@@ -25,12 +25,12 @@ An end-to-end whole-genome sequencing variant-calling workflow for *Staphylococc
 
 | Tool | Version | Purpose |
 |------|---------|---------|
-| SRA Toolkit | 3.0.3 | Read acquisition |
-| FastQC | 0.11.9 | Sequencing quality assessment |
-| Trimmomatic | 0.39 | Adapter trimming and quality filtering |
-| BWA-MEM | 0.7.17 | Read alignment to reference |
-| SAMtools | 1.13 | SAM/BAM processing, sorting, indexing |
-| FreeBayes | 1.3.6 | Haplotype-based variant calling |
+| SRA Toolkit | 3.4.1 | Read acquisition |
+| FastQC | 0.12.1 | Sequencing quality assessment |
+| Trimmomatic | 0.41 | Adapter trimming and quality filtering |
+| BWA-MEM | 0.7.19 | Read alignment to reference |
+| SAMtools | 1.24 | SAM/BAM processing, sorting, indexing |
+| FreeBayes | 1.3.10 | Haplotype-based variant calling |
 | Python | 3.x | Filtering, validation, annotation |
 | Pandas | — | Results processing and output |
 
