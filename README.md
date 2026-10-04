@@ -1,4 +1,4 @@
-# S. aureus USA300 WGS Variant-Calling Pipeline
+# WGS Variant-Calling and Gene Annotation Pipeline 
 
 An end-to-end whole-genome sequencing variant-calling workflow for *Staphylococcus aureus* USA300, implemented in Google Colab. Covers read acquisition, quality control, trimming, reference alignment, BAM processing, variant calling, filtering, validation, and gene-level annotation.
 
@@ -47,9 +47,10 @@ ERR17521341 paired-end reads
           │
           ▼
     Trimmomatic
-  adapter trimming
-  SLIDINGWINDOW:4:15
-  MINLEN:36
+quality trimming
+LEADING:3 TRAILING:3
+SLIDINGWINDOW:4:15
+MINLEN:36
           │
           ▼
      BWA-MEM
